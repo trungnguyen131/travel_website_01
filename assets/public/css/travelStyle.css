@@ -832,7 +832,7 @@ section.destination .box-container .box .content a i {
 }
 
 section.services {
-  background-image: url("/app/img/service-map.png");
+  background-image: url("../../img/service-map.png");
   background-position: center 70px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1231,7 +1231,7 @@ section.outstanding div.box-container div.gallery_grid article.grid-items-galler
 section.seller {
   margin-top: -150px;
   padding-top: calc(9rem + 150px);
-  background-image: url("/app/img/service-map.png");
+  background-image: url("../../img/service-map.png");
   background-position: center 70px;
   background-repeat: no-repeat;
   background-size: cover;
