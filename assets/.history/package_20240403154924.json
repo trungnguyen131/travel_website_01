@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start:scss": "sass assets/sass/travelStyle.scss assets/public/css/travelStyle.css --watch",
+    "start:scss": "sass app/sass/travelStyle.scss app/public/css/travelStyle.css --watch",
     "build:pug": "pug -w ./views/pug -o ./html -P"
   },
   "devDependencies": {

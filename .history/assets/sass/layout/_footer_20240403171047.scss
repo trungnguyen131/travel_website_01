@@ -1,0 +1,188 @@
+@use "../helpers/mixin" as mixFooter;
+@use "../helpers" as hepFt;
+footer {
+    padding-top: 70px;
+    background-image: url("../../");
+	background-position: center 70px;
+	background-repeat: no-repeat;
+	background-size: cover ;
+    section.box-quick {
+        div.layout-quick {
+            display: flex;
+            align-items: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid hepFt.$primary-color-eeee;
+            a {
+                display: flex;
+                align-items: center;
+                color:hepFt.$primary-color-green;
+                font-size: 2.4rem;
+                width: fit-content;
+                float: left;
+                span {
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    margin-left: 1.6rem;
+                }
+            }
+
+            span.explore {
+                float: left;
+                color:hepFt.$primary-color-gray;
+                font-size: 1.8rem;
+                margin-left: 7rem;
+            }
+
+            a.number-entrada {
+                margin-left: auto;
+                font-size: 1.8rem;
+                font-weight: 400;
+            }
+        }
+
+        div.box-calling {
+            padding: 20px 0;
+            border-bottom: 1px solid hepFt.$primary-color-eeee;
+            @include mixFooter.clearfix();
+            div.adventures-calling {
+                float: left;
+
+                span {
+                    color:hepFt.$primary-color-green-light;
+                    font-size: 1.8rem;
+                }
+
+                h3 {
+                    color:hepFt.$primary-color-green;
+                    font-size: 3rem;
+                    font-weight: 500;
+                    max-width: 350px;
+                    line-height: 1.4;
+                    margin-top: 12px;
+                }
+            }
+            div.our-offices {
+                float: right;
+                div.layout-offices-earth {
+                    display: flex;
+                    align-items: flex-start;
+                    div.earth {
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 50%;
+                        background-color:hepFt.$primary-color-green ;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 18px;
+                        i {
+                            color:hepFt.$white;
+                            font-size: 2.8rem;
+                        }
+                    }
+                    div.text-info-our {
+                        height: 100%;
+                        margin-top: 3px;
+                        span {
+                            font-size: 1.7rem;
+                        }
+
+                        h4 {
+                            font-size: 1.9rem;
+                            font-weight: 500;
+                            margin-top: 11px;
+                        }
+
+                        div.icon-rw {
+                            margin-top: 3.5rem;
+                            i {
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        div.services-adventures-country-talk {
+            border-bottom: 1px solid hepFt.$primary-color-eeee;
+            padding-bottom: 20px;
+            div.flex-layout-try-talk {
+                display: flex;
+                margin-top: 30px;
+                justify-content: space-between;
+                div.box-ser-ad-try {
+                    flex-basis: 42%;
+                    div.layout-ser-ad-try {
+                        display: flex;
+                        justify-content: space-between;
+                        h4 {
+                            font-size: 1.9rem;
+                            font-weight: 500;
+                        }
+    
+                        ul.parent-ser-ad-try {
+                            margin-top: 20px;
+                            li {
+                                margin-top: 19px;
+                                > a {
+                                    color:hepFt.$primary-color-gray-drak-77;
+                                    font-size: 1.4rem;
+                                }
+                            } 
+                        }
+                    }
+                }
+                div.box-let-talk {
+                    flex-basis: 39%;
+                    display: flex;
+                    flex-direction: column;
+                    div.inline-box-right {
+                        margin-left: auto;
+                        width: 100%;
+                        h4 {
+                            font-size: 1.9rem;
+                            font-weight: 500;
+                        }
+    
+                        span {
+                            font-size: 2.7rem;
+                            font-weight: 600;
+                            margin: 30px 0;
+                            display: inline-block;
+                            i {margin-left: 13px;}
+                        }
+                    }
+                }
+            }
+
+            div.policy-link {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 100px;
+
+                & > span.pri-poli {
+                    font-size: 1.65rem;
+                    font-weight: 500;
+                }
+                
+                ul.linke-fb-ins * {
+                    display: inline-block;
+                    color:hepFt.$black;
+                    font-weight: 500;
+                    font-size: 1.65rem;
+                    &.line-diagonal {
+                        margin: 0 8px;
+                        
+                    }
+                }
+            }
+        }
+
+        div.emprise {
+            font-size: 1.4rem;
+            margin-top: 20px;
+            color:hepFt.$primary-color-gray-drak-55;
+        }
+    }
+}

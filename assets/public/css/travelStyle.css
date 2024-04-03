@@ -1775,7 +1775,7 @@ section.container-tour-world {
   margin-top: 50px;
 }
 section.container-tour-world div#box-tour-world {
-  background-image: url("/app/img/seller-imgae-1.jpg");
+  background-image: url("../../img/seller-imgae-1.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2007,7 +2007,7 @@ section#question article.sale-support-layout div.row div.col div.for-sales a:hov
 
 footer {
   padding-top: 70px;
-  background-image: url("/app/img/service-map.png");
+  background-image: url("../../img/service-map.png");
   background-position: center 70px;
   background-repeat: no-repeat;
   background-size: cover;

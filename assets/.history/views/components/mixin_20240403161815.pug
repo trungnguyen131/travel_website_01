@@ -36,7 +36,7 @@ mixin box_item($span_text, $h3_text, $a_text)
 //-////////////////////////////////////////////
 mixin box_item_video($span_text, $h3_text, $a_text)
 		- var styleBtn = "#book-gorm"
-		video(src="../../assets/video/video-tour-2.mp4" type="video/mp4" autoplay loop muted) 
+		video(src="../../app/video/video-tour-2.mp4" type="video/mp4" autoplay loop muted) 
 		div(class= "content")
 				div(class="info-title-tour")|
 						|
@@ -66,7 +66,7 @@ mixin content_boxItem($link_images)
 				div(class= "box")
 						div(class= "image")|
 								|
-								- const imgLink = "../../assets/img"
+								- const imgLink = "../../app/img"
 								img(src=`${imgLink}/${$link_images}.jpg`, alt="")
 						div(class= "content")
 								div(class="name-heart")
@@ -87,7 +87,7 @@ mixin content_boxItem($link_images)
 												p *Price varies 
 										div(class="star-number")|
 												|
-												img(src="../../assets/img/stars.png")|
+												img(src="../../app/img/stars.png")|
 												|
 												b 4.8(107)
 								div(class="box-watch")
@@ -128,7 +128,7 @@ mixin services_box()
 								div(class="link-category")|
 										|
 										a(href="#") 
-												img(src=`../../assets/img/${$link_category[$run]}.png`)
+												img(src=`../../app/img/${$link_category[$run]}.png`)
 										h3(class="title-category") #[a(href="#") ]
 										|
 										|
@@ -150,7 +150,7 @@ mixin gallery_tour()
 				- for(let $run = 0; $run < $img.length; $run++)
 						article(class="grid-items-gallery")
 								div(class="gallery-img-item")
-										img(src=`../../assets/img/${$img[$run]}.avif`)
+										img(src=`../../app/img/${$img[$run]}.avif`)
 								|
 								div(class="box-info-gallery")|
 									a(href="#" class="link-info-gallery") 
@@ -184,7 +184,7 @@ mixin seller-post()
 				div(class="post-item-seller")
 						figure(class="fig-image")
 								div(class="image-seller")
-										img(src=`../../assets/img/${$image_seller[$run]}.jpg` alt="")
+										img(src=`../../app/img/${$image_seller[$run]}.jpg` alt="")
 								div(class="seller-content")
 										span(class="moneys-seller") 30%
 										div(class="info-seller-explore")
@@ -192,7 +192,7 @@ mixin seller-post()
 														time(class="times-seller") 10 Days | 09 Night 
 														div(class="link-moneys-seller") #[a(href="#") $895.50 ]
 												div(class="explore-seller-share")
-														button(class="icon-share") #[img(src="../../assets/img/share.png" alt="")]
+														button(class="icon-share") #[img(src="../../app/img/share.png" alt="")]
 														div(class="btn-seller")
 																a(href="#") Explore 
 						figcaption(class="title-content-seller-text")
@@ -201,7 +201,7 @@ mixin seller-post()
 //-/////////////////////////////////
 mixin blogsBox($blogs_img)
 		div(class= "box")
-				div(class= "images") #[img(src= `../../assets/img/${$blogs_img}.jpg`, alt= "")]
+				div(class= "images") #[img(src= `../../app/img/${$blogs_img}.jpg`, alt= "")]
 				div(class= "content")|
 						|
 						a(href= "#", class= "link") Life is a journey, not a destination
@@ -250,13 +250,13 @@ mixin guides_box()
 					a(href="#")|
 						|
 						if ($run == 0)
-							img(src=`../../assets/img/${$guides_image[$run]}.jpg`, alt="", style={'object-position':"center"})
+							img(src=`../../app/img/${$guides_image[$run]}.jpg`, alt="", style={'object-position':"center"})
 						else if ($run == 1)
-							img(src=`../../assets/img/${$guides_image[$run]}.jpg`, alt="", style={'object-position':"right"})
+							img(src=`../../app/img/${$guides_image[$run]}.jpg`, alt="", style={'object-position':"right"})
 						else if ($run == 2)
-							img(src=`../../assets/img/${$guides_image[$run]}.avif`, alt="", style={'object-position':"center"})
+							img(src=`../../app/img/${$guides_image[$run]}.avif`, alt="", style={'object-position':"center"})
 						else 
-							img(src=`../../assets/img/${$guides_image[$run]}.jpg`, alt="")
+							img(src=`../../app/img/${$guides_image[$run]}.jpg`, alt="")
 					div(class="number-guides-image")
 						b= `0${$run + 1}`
 				div(class="guides-info")

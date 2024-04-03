@@ -1,0 +1,78 @@
+@use "../helpers" as helTw;
+
+section.container-tour-world {
+    margin-top: 50px;
+    div#box-tour-world {
+        background-image: url("../../");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 44rem;
+        padding:30px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        @include helTw.cssFlex(center);
+        border-radius: 30px;
+        &::before {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 30px;
+        }
+        &:hover {
+            box-shadow: 0 0 3px helTw.$black ;
+        }
+        div.content-tour-world {
+            position: relative;
+            z-index: 1;
+            margin-top: 30px;
+            strong, div {
+                color:helTw.$white;
+                font-size: 4.3rem;
+            }
+            div {
+                font-size: 3.3rem;
+                margin: 2rem 0;
+            }
+
+            strong {
+                line-height: 1.4;
+            }
+    
+            & > span {
+                font-size: 2rem;
+                font-weight: 400;
+                display: block;
+                line-height: 1.6;
+                margin-top: 40px;
+                color:helTw.$primary-color-ccc;
+            }
+    
+            a.btn {
+                margin-top: 40px;
+                border-color:#e7cb16 ;
+                padding: 1.3rem 3rem;
+                background-color:#c9b117 ;
+                outline: none;
+                outline-offset: none;
+                transition: all 0.2s linear;
+                &:hover{
+                    background-color:#e7cb16 ;
+                    outline: 2px solid #e7cb16;
+                    outline-offset: 5px;
+                }
+                &:hover > * {
+                    color:helTw.$white;
+                }
+                span {
+                    color:helTw.$white;
+                    margin: 0;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
