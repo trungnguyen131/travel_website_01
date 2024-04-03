@@ -1,0 +1,45 @@
+@use "../vendors/reponsive" as repon;
+@use "../helpers/mixin" as scroll;
+
+html {
+	font-family: 'Poppins', sans-serif;
+	
+	@include repon.repon-sive(sm) {
+		font-size: 52.5%;
+	}
+	@include repon.repon-sive(md) {
+		font-size: 56.5%;
+	}
+	@include repon.repon-sive(xl-min) {
+		font-size: 59.5%;
+	}
+
+	
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+	scroll-padding-top: 10rem;
+	@include scroll.scroll();
+}
+
+section {
+	padding: 3rem 3%;
+	scroll-snap-align: start;
+	@include repon.repon-sive(md) {
+		padding: 3rem 6.2%;
+	}
+}
+
+body {
+	overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	&.active-body-scroll {
+		overflow: hidden;
+	}
+
+	div#myApp {
+		overflow-x: hidden;
+	}
+}
+

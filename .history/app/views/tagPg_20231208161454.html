@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../sass/public/css/travelStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  </head>
+  <body> 
+    <div id="myApp">
+      <!--================= Header ====================-->
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="btn-bars" id="menu-btn"><i class="fa-solid fa-bars-staggered"></i></div><span class="search-shopping"><i class="fa-solid fa-magnifying-glass" id="click-to-search"></i></span>
+            </div>
+            <div class="col"><a class="logo main-logo" href="#"> <img style="width:45px;margin:7px;" src="../img/beach-tree.png" alt=""><span>Travel</span></a></div>
+            <div class="col">
+              <div class="overlay-box">
+                <nav class="navbar">
+                  <div class="box-bor-bot"><a class="logo" href="#"> <img style="width:45px;margin:7px;" src="../img/beach-tree.png" alt=""><span>Travel</span></a></div>
+                  <div class="box-nav">
+                    
+                     <a class="active-link" href="#Home"><i class="fa-solid fa-house icons-screen"></i> Home </a>
+                    
+                     <a href="#Destination"><i class="fa-solid fa-gear icons-screen"></i> Destination </a>
+                    
+                     <a href="#Services"><i class="fa-solid fa-paper-plane icons-screen"></i> Services </a>
+                    
+                     <a href="#Outstanding"><i class="fa-solid fa-earth-americas icons-screen"></i> Outstanding </a>
+                    
+                     <a href="#Seller"><i class="fa-solid fa-user icons-screen"></i> Seller </a>
+                    
+                     <a href="#Guides"><i class="fa-solid fa-circle-info icons-screen"></i> Guides </a><span class="line-item"></span><a href="#"><i class="fa-solid fa-cart-shopping"></i> </a><a href="#"><i class="fa-solid fa-chalkboard-user"></i></a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="col">
+              <div class="parent-box-ip">
+                <form action="" method="post"> 
+                  <div class="search-box-inp">
+                    <input type="text" id="click-to-focus" name="data-travel" placeholder="Search for destination" required>
+                  </div>
+                  <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+              </div>
+              <a class="btn" href="#book-gorm">Sign in</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--=================Home=================-->
+      <section class="home" id="Home">
+        <video src="../video/video-tour-2.mp4" type="video/mp4" autoplay="autoplay" loop="loop" muted="muted"> </video>
+        <div class="content">
+          <div class="info-title-tour">
+            <span>follow us</span>
+            <h3>to the unknown</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exercitationem assumenda odio iusto, quo veniam qui inventore! Eligendi illo </p>
+            <a class="btn" href="#">book now</a>
+          </div>
+          <div class="contact-us-box">
+            <nav class="contact-link">
+              
+              <a href="#"><i class="fa fa-facebook-f"></i></a>
+              
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <!--=================booking-form ============-->
+      <section class="book-form" id="book-form">
+        <form action="">
+          <div class="inputBox">
+            <span>Where to?</span>
+            <input type="text" placeholder="place name" value=""/>
+          </div>
+          <div class="inputBox">
+            <span>When?</span>
+            <input type="date" value=""/>
+          </div>
+          <div class="inputBox">
+            <span>how many?</span>
+            <input type="number" placeholder="number of travelers" value=""/>
+          </div>
+          <input class="btn" type="submit" value="book now">
+        </form>
+      </section>
+      <!--=================Destination=============-->
+      <section class="destination" id="Destination">
+        <div class="heading">
+          <h2>Our destination</h2>
+          <span>Set your own destination and start the exciting journey we have for you</span>
+        </div>
+        <div class="box-container">
+          <div class="flex-slick slick-tour">
+            <div class="box-items-tour">
+              <div class="box">
+                <div class="image">
+                  <img src="../img/des-1.jpg" alt=""/>
+                </div>
+                <div class="content">
+                  <div class="name-heart">
+                    <div class="mountain-hiking">
+                      <h3>Mountain Jungfrau</h3>
+                      <span>Hiking Tour | Stoke on trent</span>
+                    </div>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  </div>
+                  <div class="mountain-moneys-form">
+                    <div class="price">
+                      
+                      <span>from </span><strong>$890.00</strong>
+                      <p>*Price varies </p>
+                    </div>
+                    <div class="star-number">
+                      <img src="../img/stars.png"/><b>4.8(107)</b></div>
+                  </div>
+                  <div class="box-watch">
+                    <div class="days-watch"><i class="fa-regular fa-clock"></i><span>7 Days</span></div>
+                    <div class="free-news">
+                      <div class="free"><i class="fa-solid fa-check"></i><span>Free Cancellation</span></div>
+                      <div class="new"><i class="fa-solid fa-check"></i><span class="hide">New on Entrada</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <div class="image">
+                  <img src="../img/des-2.jpg" alt=""/>
+                </div>
+                <div class="content">
+                  <div class="name-heart">
+                    <div class="mountain-hiking">
+                      <h3>Mountain Jungfrau</h3>
+                      <span>Hiking Tour | Stoke on trent</span>
+                    </div>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  </div>
+                  <div class="mountain-moneys-form">
+                    <div class="price">
+                      
+                      <span>from </span><strong>$890.00</strong>
+                      <p>*Price varies </p>
+                    </div>
+                    <div class="star-number">
+                      <img src="../img/stars.png"/><b>4.8(107)</b></div>
+                  </div>
+                  <div class="box-watch">
+                    <div class="days-watch"><i class="fa-regular fa-clock"></i><span>7 Days</span></div>
+                    <div class="free-news">
+                      <div class="free"><i class="fa-solid fa-check"></i><span>Free Cancellation</span></div>
+                      <div class="new"><i class="fa-solid fa-check"></i><span class="hide">New on Entrada</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <div class="image">
+                  <img src="../img/des-3.jpg" alt=""/>
+                </div>
+                <div class="content">
+                  <div class="name-heart">
+                    <div class="mountain-hiking">
+                      <h3>Mountain Jungfrau</h3>
+                      <span>Hiking Tour | Stoke on trent</span>
+                    </div>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  </div>
+                  <div class="mountain-moneys-form">
+                    <div class="price">
+                      
+                      <span>from </span><strong>$890.00</strong>
+                      <p>*Price varies </p>
+                    </div>
+                    <div class="star-number">
+                      <img src="../img/stars.png"/><b>4.8(107)</b></div>
+                  </div>
+                  <div class="box-watch">
+                    <div class="days-watch"><i class="fa-regular fa-clock"></i><span>7 Days</span></div>
+                    <div class="free-news">
+                      <div class="free"><i class="fa-solid fa-check"></i><span>Free Cancellation</span></div>
+                      <div class="new"><i class="fa-solid fa-check"></i><span class="hide">New on Entrada</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <div class="image">
+                  <img src="../img/des-4.jpg" alt=""/>
+                </div>
+                <div class="content">
+                  <div class="name-heart">
+                    <div class="mountain-hiking">
+                      <h3>Mountain Jungfrau</h3>
+                      <span>Hiking Tour | Stoke on trent</span>
+                    </div>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  </div>
+                  <div class="mountain-moneys-form">
+                    <div class="price">
+                      
+                      <span>from </span><strong>$890.00</strong>
+                      <p>*Price varies </p>
+                    </div>
+                    <div class="star-number">
+                      <img src="../img/stars.png"/><b>4.8(107)</b></div>
+                  </div>
+                  <div class="box-watch">
+                    <div class="days-watch"><i class="fa-regular fa-clock"></i><span>7 Days</span></div>
+                    <div class="free-news">
+                      <div class="free"><i class="fa-solid fa-check"></i><span>Free Cancellation</span></div>
+                      <div class="new"><i class="fa-solid fa-check"></i><span class="hide">New on Entrada</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <div class="image">
+                  <img src="../img/des-5.jpg" alt=""/>
+                </div>
+                <div class="content">
+                  <div class="name-heart">
+                    <div class="mountain-hiking">
+                      <h3>Mountain Jungfrau</h3>
+                      <span>Hiking Tour | Stoke on trent</span>
+                    </div>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  </div>
+                  <div class="mountain-moneys-form">
+                    <div class="price">
+                      
+                      <span>from </span><strong>$890.00</strong>
+                      <p>*Price varies </p>
+                    </div>
+                    <div class="star-number">
+                      <img src="../img/stars.png"/><b>4.8(107)</b></div>
+                  </div>
+                  <div class="box-watch">
+                    <div class="days-watch"><i class="fa-regular fa-clock"></i><span>7 Days</span></div>
+                    <div class="free-news">
+                      <div class="free"><i class="fa-solid fa-check"></i><span>Free Cancellation</span></div>
+                      <div class="new"><i class="fa-solid fa-check"></i><span class="hide">New on Entrada</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <div class="image">
+                  <img src="../img/des-6.jpg" alt=""/>
+                </div>
+                <div class="content">
+                  <div class="name-heart">
+                    <div class="mountain-hiking">
+                      <h3>Mountain Jungfrau</h3>
+                      <span>Hiking Tour | Stoke on trent</span>
+                    </div>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  </div>
+                  <div class="mountain-moneys-form">
+                    <div class="price">
+                      
+                      <span>from </span><strong>$890.00</strong>
+                      <p>*Price varies </p>
+                    </div>
+                    <div class="star-number">
+                      <img src="../img/stars.png"/><b>4.8(107)</b></div>
+                  </div>
+                  <div class="box-watch">
+                    <div class="days-watch"><i class="fa-regular fa-clock"></i><span>7 Days</span></div>
+                    <div class="free-news">
+                      <div class="free"><i class="fa-solid fa-check"></i><span>Free Cancellation</span></div>
+                      <div class="new"><i class="fa-solid fa-check"></i><span class="hide">New on Entrada</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <div class="image">
+                  <img src="../img/des-7.jpg" alt=""/>
+                </div>
+                <div class="content">
+                  <div class="name-heart">
+                    <div class="mountain-hiking">
+                      <h3>Mountain Jungfrau</h3>
+                      <span>Hiking Tour | Stoke on trent</span>
+                    </div>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  </div>
+                  <div class="mountain-moneys-form">
+                    <div class="price">
+                      
+                      <span>from </span><strong>$890.00</strong>
+                      <p>*Price varies </p>
+                    </div>
+                    <div class="star-number">
+                      <img src="../img/stars.png"/><b>4.8(107)</b></div>
+                  </div>
+                  <div class="box-watch">
+                    <div class="days-watch"><i class="fa-regular fa-clock"></i><span>7 Days</span></div>
+                    <div class="free-news">
+                      <div class="free"><i class="fa-solid fa-check"></i><span>Free Cancellation</span></div>
+                      <div class="new"><i class="fa-solid fa-check"></i><span class="hide">New on Entrada</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <div class="image">
+                  <img src="../img/des-8.jpg" alt=""/>
+                </div>
+                <div class="content">
+                  <div class="name-heart">
+                    <div class="mountain-hiking">
+                      <h3>Mountain Jungfrau</h3>
+                      <span>Hiking Tour | Stoke on trent</span>
+                    </div>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  </div>
+                  <div class="mountain-moneys-form">
+                    <div class="price">
+                      
+                      <span>from </span><strong>$890.00</strong>
+                      <p>*Price varies </p>
+                    </div>
+                    <div class="star-number">
+                      <img src="../img/stars.png"/><b>4.8(107)</b></div>
+                  </div>
+                  <div class="box-watch">
+                    <div class="days-watch"><i class="fa-regular fa-clock"></i><span>7 Days</span></div>
+                    <div class="free-news">
+                      <div class="free"><i class="fa-solid fa-check"></i><span>Free Cancellation</span></div>
+                      <div class="new"><i class="fa-solid fa-check"></i><span class="hide">New on Entrada</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================= Services =============-->
+      <section class="services" id="Services">
+        <div class="heading">
+          
+          <h2>Select Category</h2>
+          <span>Sost Brilliant reasons Entrada should be your one-stop-shop!</span>
+        </div>
+        <div class="box-container">
+          <div class="flex-slick slick-tour">
+            <div class="box-items-tour">
+              <div class="box">
+                <span class="moneys-category">4.8$</span>
+                <div class="link-category">
+                  <a href="#"> <img src="../img/24-hours-support.png"></a>
+                  <h3 class="title-category"><a href="#">24/7 Supports</a></h3>
+                  <span>378 activities</span>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <span class="moneys-category">4.3$</span>
+                <div class="link-category">
+                  <a href="#"> <img src="../img/sunbed.png"></a>
+                  <h3 class="title-category"><a href="#">Beach Activity</a></h3>
+                  <span>378 activities</span>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <span class="moneys-category">5.8$</span>
+                <div class="link-category">
+                  <a href="#"> <img src="../img/jungle.png"></a>
+                  <h3 class="title-category"><a href="#">Jungle</a></h3>
+                  <span>378 activities</span>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <span class="moneys-category">7.8$</span>
+                <div class="link-category">
+                  <a href="#"> <img src="../img/city.png"></a>
+                  <h3 class="title-category"><a href="#">City tours</a></h3>
+                  <span>378 activities</span>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <span class="moneys-category">3.9$</span>
+                <div class="link-category">
+                  <a href="#"> <img src="../img/bungee.png"></a>
+                  <h3 class="title-category"><a href="#">Bungee Jump</a></h3>
+                  <span>378 activities</span>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <span class="moneys-category">4.8$</span>
+                <div class="link-category">
+                  <a href="#"> <img src="../img/vending-machine.png"></a>
+                  <h3 class="title-category"><a href="#">Foots && Drinks</a></h3>
+                  <span>378 activities</span>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <span class="moneys-category">5.2$</span>
+                <div class="link-category">
+                  <a href="#"> <img src="../img/adventurer.png"></a>
+                  <h3 class="title-category"><a href="#">Adventurer</a></h3>
+                  <span>378 activities</span>
+                </div>
+              </div>
+            </div>
+            <div class="box-items-tour">
+              <div class="box">
+                <span class="moneys-category">6.3$</span>
+                <div class="link-category">
+                  <a href="#"> <img src="../img/backpack.png"></a>
+                  <h3 class="title-category"><a href="#">Hiking trips</a></h3>
+                  <span>378 activities</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================= Gallery =============-->
+      <section class="outstanding" id="Outstanding">
+        <div class="heading">
+          <h2>Top Destinations</h2>
+          <span>Sort Brilliant reasons Entrada should be your one-stop-shop!</span>
+        </div>
+        <div class="box-container">
+          <div class="slick-tour-gallery flex-slick">
+            <div class="gallery_grid">
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-1.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.8$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Japan</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-2.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.7$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Greece</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-3.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">5.5$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">London</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-4.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">6.3$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Old Rain</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-5.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">5.9$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Paris</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-6.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.9$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery"> Amsterdam</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+            </div>
+            <div class="gallery_grid">
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-1.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.8$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Japan</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-2.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.7$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Greece</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-3.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">5.5$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">London</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-4.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">6.3$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Old Rain</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-5.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">5.9$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Paris</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-6.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.9$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery"> Amsterdam</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+            </div>
+            <div class="gallery_grid">
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-1.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.8$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Japan</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-2.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.7$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Greece</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-3.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">5.5$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">London</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-4.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">6.3$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Old Rain</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-5.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">5.9$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Paris</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-6.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.9$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery"> Amsterdam</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+            </div>
+            <div class="gallery_grid">
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-1.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.8$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Japan</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-2.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.7$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Greece</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-3.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">5.5$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">London</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-4.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">6.3$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Old Rain</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-5.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">5.9$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Paris</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-6.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.9$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery"> Amsterdam</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+            </div>
+            <div class="gallery_grid">
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-1.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.8$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Japan</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-2.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.7$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Greece</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-3.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">5.5$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">London</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-4.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">6.3$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Old Rain</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-5.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">5.9$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery">Paris</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+              <article class="grid-items-gallery">
+                <div class="gallery-img-item"><img src="../img/destination-6.avif"/></div>
+                <div class="box-info-gallery"><a class="link-info-gallery" href="#">
+                     <span class="moneys-category">4.9$</span>
+                    
+                    <div class="box-link-gallery">
+                      
+                      <button class="link-testing"><span class="title_gallery"> Amsterdam</span> </button>
+                      <div class="waterfall">Waterfall</div>
+                    </div></a></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================= Seller ==============-->
+      <section class="seller" id="Seller">
+        <div class="title-seller-heading">
+          <div class="heading">
+            <h2>Best Seller</h2>
+            <span>Sort Brilliant reasons Entrada should be your one-stop-shop!</span>
+          </div>
+          <div class="btn-seller">
+            <button>Check All</button>
+          </div>
+        </div>
+        <div class="box-container">
+          <article class="post-seller">
+            <div class="post-item-seller">
+              <figure class="fig-image">
+                <div class="image-seller"><img src="../img/river-1.jpg" alt=""/></div>
+                <div class="seller-content"><span class="moneys-seller">30%</span>
+                  <div class="info-seller-explore">
+                    <div class="time-moneys-seller">
+                      <time class="times-seller">10 Days | 09 Night </time>
+                      <div class="link-moneys-seller"><a href="#">$895.50 </a></div>
+                    </div>
+                    <div class="explore-seller-share">
+                      <button class="icon-share"><img src="../img/share.png" alt=""/></button>
+                      <div class="btn-seller"><a href="#">Explore </a></div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <figcaption class="title-content-seller-text">
+                <h3 class="heading-seller-title">Mountain river tourism</h3>
+                <p>Check out Daily and Promotion on Hotels, Easy and Fast Booking</p>
+              </figcaption>
+            </div>
+            <div class="post-item-seller">
+              <figure class="fig-image">
+                <div class="image-seller"><img src="../img/gallery-img-9.jpg" alt=""/></div>
+                <div class="seller-content"><span class="moneys-seller">30%</span>
+                  <div class="info-seller-explore">
+                    <div class="time-moneys-seller">
+                      <time class="times-seller">10 Days | 09 Night </time>
+                      <div class="link-moneys-seller"><a href="#">$895.50 </a></div>
+                    </div>
+                    <div class="explore-seller-share">
+                      <button class="icon-share"><img src="../img/share.png" alt=""/></button>
+                      <div class="btn-seller"><a href="#">Explore </a></div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <figcaption class="title-content-seller-text">
+                <h3 class="heading-seller-title">Nature mountain forest</h3>
+                <p>Check out Daily and Promotion on Hotels, Easy and Fast Booking</p>
+              </figcaption>
+            </div>
+            <div class="post-item-seller">
+              <figure class="fig-image">
+                <div class="image-seller"><img src="../img/london-1.jpg" alt=""/></div>
+                <div class="seller-content"><span class="moneys-seller">30%</span>
+                  <div class="info-seller-explore">
+                    <div class="time-moneys-seller">
+                      <time class="times-seller">10 Days | 09 Night </time>
+                      <div class="link-moneys-seller"><a href="#">$895.50 </a></div>
+                    </div>
+                    <div class="explore-seller-share">
+                      <button class="icon-share"><img src="../img/share.png" alt=""/></button>
+                      <div class="btn-seller"><a href="#">Explore </a></div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <figcaption class="title-content-seller-text">
+                <h3 class="heading-seller-title">Big Ben clock tower</h3>
+                <p>Check out Daily and Promotion on Hotels, Easy and Fast Booking</p>
+              </figcaption>
+            </div>
+            <div class="post-item-seller">
+              <figure class="fig-image">
+                <div class="image-seller"><img src="../img/boat.jpg" alt=""/></div>
+                <div class="seller-content"><span class="moneys-seller">30%</span>
+                  <div class="info-seller-explore">
+                    <div class="time-moneys-seller">
+                      <time class="times-seller">10 Days | 09 Night </time>
+                      <div class="link-moneys-seller"><a href="#">$895.50 </a></div>
+                    </div>
+                    <div class="explore-seller-share">
+                      <button class="icon-share"><img src="../img/share.png" alt=""/></button>
+                      <div class="btn-seller"><a href="#">Explore </a></div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <figcaption class="title-content-seller-text">
+                <h3 class="heading-seller-title"></h3>
+                <p>Check out Daily and Promotion on Hotels, Easy and Fast Booking</p>
+              </figcaption>
+            </div>
+            <div class="post-item-seller">
+              <figure class="fig-image">
+                <div class="image-seller"><img src="../img/seller-imgae-1.jpg" alt=""/></div>
+                <div class="seller-content"><span class="moneys-seller">30%</span>
+                  <div class="info-seller-explore">
+                    <div class="time-moneys-seller">
+                      <time class="times-seller">10 Days | 09 Night </time>
+                      <div class="link-moneys-seller"><a href="#">$895.50 </a></div>
+                    </div>
+                    <div class="explore-seller-share">
+                      <button class="icon-share"><img src="../img/share.png" alt=""/></button>
+                      <div class="btn-seller"><a href="#">Explore </a></div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <figcaption class="title-content-seller-text">
+                <h3 class="heading-seller-title"></h3>
+                <p>Check out Daily and Promotion on Hotels, Easy and Fast Booking</p>
+              </figcaption>
+            </div>
+            <div class="post-item-seller">
+              <figure class="fig-image">
+                <div class="image-seller"><img src="../img/natural.jpg" alt=""/></div>
+                <div class="seller-content"><span class="moneys-seller">30%</span>
+                  <div class="info-seller-explore">
+                    <div class="time-moneys-seller">
+                      <time class="times-seller">10 Days | 09 Night </time>
+                      <div class="link-moneys-seller"><a href="#">$895.50 </a></div>
+                    </div>
+                    <div class="explore-seller-share">
+                      <button class="icon-share"><img src="../img/share.png" alt=""/></button>
+                      <div class="btn-seller"><a href="#">Explore </a></div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <figcaption class="title-content-seller-text">
+                <h3 class="heading-seller-title"></h3>
+                <p>Check out Daily and Promotion on Hotels, Easy and Fast Booking</p>
+              </figcaption>
+            </div>
+            <div class="post-item-seller">
+              <figure class="fig-image">
+                <div class="image-seller"><img src="../img/jp_ps.jpg" alt=""/></div>
+                <div class="seller-content"><span class="moneys-seller">30%</span>
+                  <div class="info-seller-explore">
+                    <div class="time-moneys-seller">
+                      <time class="times-seller">10 Days | 09 Night </time>
+                      <div class="link-moneys-seller"><a href="#">$895.50 </a></div>
+                    </div>
+                    <div class="explore-seller-share">
+                      <button class="icon-share"><img src="../img/share.png" alt=""/></button>
+                      <div class="btn-seller"><a href="#">Explore </a></div>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <figcaption class="title-content-seller-text">
+                <h3 class="heading-seller-title"></h3>
+                <p>Check out Daily and Promotion on Hotels, Easy and Fast Booking</p>
+              </figcaption>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!--================= Guides ==============-->
+      <section class="guides" id="Guides">
+        <div class="title-guides-heading">
+          <div class="heading">
+            <h2>Tours Guides</h2>
+            <span>Sort Brilliant reasons Entrada should be your one-stop-shop!</span>
+          </div>
+          <div class="box-container">
+            <div class="max-content-box guides-layout">
+              <div class="guides-item">
+                <div class="guides-item-layout">
+                  <div class="image-item">
+                    <a href="#">
+                      <img src="../img/image-guides-1.jpg" alt="" style="object-position:center;"/></a>
+                    <div class="number-guides-image"><b>01</b></div>
+                  </div>
+                  <div class="guides-info">
+                    <article class="name-info-content">
+                      <div class="info-content-heading">Adventure Guru </div>
+                      <h2 class="name-user">Martina <br/> James Junior </h2>
+                    </article>
+                    <article class="about-guides">
+                      <div class="about-content">
+                        <h2 class="about-item">About</h2>
+                        <span> Check out Daily and Promotion on Hotels, Easy and Fast Booking.</span>
+                      </div>
+                      <div class="journey-content">
+                        <h2 class="journey-content">Journey</h2>
+                        <span> Check out Daily and Promotion on Hotels, Easy and Fast Booking. </span>
+                      </div>
+                    </article>
+                    <nav class="link-info">
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="guides-item">
+                <div class="guides-item-layout">
+                  <div class="image-item">
+                    <a href="#">
+                      <img src="../img/image-guides-2.jpg" alt="" style="object-position:right;"/></a>
+                    <div class="number-guides-image"><b>02</b></div>
+                  </div>
+                  <div class="guides-info">
+                    <article class="name-info-content">
+                      <div class="info-content-heading">Adventure Guru </div>
+                      <h2 class="name-user">Martina <br/> James Junior </h2>
+                    </article>
+                    <article class="about-guides">
+                      <div class="about-content">
+                        <h2 class="about-item">About</h2>
+                        <span> Check out Daily and Promotion on Hotels, Easy and Fast Booking.</span>
+                      </div>
+                      <div class="journey-content">
+                        <h2 class="journey-content">Journey</h2>
+                        <span> Check out Daily and Promotion on Hotels, Easy and Fast Booking. </span>
+                      </div>
+                    </article>
+                    <nav class="link-info">
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="guides-item">
+                <div class="guides-item-layout">
+                  <div class="image-item">
+                    <a href="#">
+                      <img src="../img/image-guides-3.avif" alt="" style="object-position:center;"/></a>
+                    <div class="number-guides-image"><b>03</b></div>
+                  </div>
+                  <div class="guides-info">
+                    <article class="name-info-content">
+                      <div class="info-content-heading">Adventure Guru </div>
+                      <h2 class="name-user">Martina <br/> James Junior </h2>
+                    </article>
+                    <article class="about-guides">
+                      <div class="about-content">
+                        <h2 class="about-item">About</h2>
+                        <span> Check out Daily and Promotion on Hotels, Easy and Fast Booking.</span>
+                      </div>
+                      <div class="journey-content">
+                        <h2 class="journey-content">Journey</h2>
+                        <span> Check out Daily and Promotion on Hotels, Easy and Fast Booking. </span>
+                      </div>
+                    </article>
+                    <nav class="link-info">
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="guides-item">
+                <div class="guides-item-layout">
+                  <div class="image-item">
+                    <a href="#">
+                      <img src="../img/image-guides-4.jpg" alt=""/></a>
+                    <div class="number-guides-image"><b>04</b></div>
+                  </div>
+                  <div class="guides-info">
+                    <article class="name-info-content">
+                      <div class="info-content-heading">Adventure Guru </div>
+                      <h2 class="name-user">Martina <br/> James Junior </h2>
+                    </article>
+                    <article class="about-guides">
+                      <div class="about-content">
+                        <h2 class="about-item">About</h2>
+                        <span> Check out Daily and Promotion on Hotels, Easy and Fast Booking.</span>
+                      </div>
+                      <div class="journey-content">
+                        <h2 class="journey-content">Journey</h2>
+                        <span> Check out Daily and Promotion on Hotels, Easy and Fast Booking. </span>
+                      </div>
+                    </article>
+                    <nav class="link-info">
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================= Tour World ===========-->
+      <section class="container-tour-world">
+        <div id="box-tour-world">
+          <div class="content-tour-world">
+            <strong>Tour the World from Your Couch with </strong>
+            <div>#ExperienceLive!</div>
+            <span>To kickstart your digital adventures with Entrada </span>
+            <a class="btn" href="#"><span>Check All</span>  </a>
+          </div>
+        </div>
+      </section>
+      <!--================= Adventures ==========-->
+      <section id="box-adventures">
+        <div class="layout-grid-adventures">
+          <article class="grid-item">
+            <div class="post-img"> 
+              <video style="object-fit:cover;" src="/app/video/video-mountants.mp4" loop autoplay="true" muted> </video>
+            </div>
+          </article>
+          <article class="grid-item">
+            <div class="post-img"><img src="/app/img/image-guides-1.jpg" alt=""></div>
+          </article>
+          <article class="grid-item">
+            <div class="post-img">
+              <video src="/app/video/man-tour-video.mp4" alt="" loop autoplay="true" muted></video>
+            </div>
+          </article>
+          <article class="grid-item">
+            <div class="post-info-adventures"><a href="#">Subscribe For Offers </a>
+              <h3>Adventures Calling You Guys! </h3>
+              <p>The Brilliant reasons Entrada should be your one-stop-shop! </p>
+              <div class="box-form">
+                <form action="" method="get"> 
+                  <div class="inp-btn"><a href="#"> <i class="fa-regular fa-envelope"></i></a>
+                    <input type="email" name="email" placeholder="Enter your email" required="required"/>
+                    <button type="submit">Scend Now!</button>
+                  </div>
+                </form>
+              </div><span>Expect a reply in 2-3 working days</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!--================ Question ===============-->
+      <section id="question">
+        <h2>Still have a question?</h2>
+        <p>The Brilliant reasons Entrada should be your one-stop-shop! </p>
+        <article class="sale-support-layout container">
+          <div class="row">
+            <div class="col">
+              <div class="for-sales"><span class="icon-earphone">
+                  <i class="fa-solid fa-headphones-simple"></i></span>
+                <h4>For Sales </h4>
+                <p>The Brilliant reasons Entrada be your one-stop-shop </p>
+                <a href="#">sales@entrada.com</a><br>
+                <a href="#">+977(985)456-32-12</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="help-support">
+                <span class="icon-question">
+                  <i class="fa-solid fa-question"></i></span>
+                <h4>Help & Support</h4>
+                <p>The Brilliant reasons Entrada be your one-stop-shop </p>
+                <a href="#">sales@entrada.com</a><br>
+                <a href="#">+977(985)456-32-12</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!--================ Footer ================-->
+      <footer id="footer">
+        <section class="box-quick">
+          <div class="layout-quick">
+            <a href="#">
+              <i class="fa-solid fa-circle-plus"></i>
+              <span>QUICK LINKS</span></a>
+            <span class="explore">Explore more categories </span>
+            <a class="number-entrada" href="#">0123-456-324-54 | hello@entrada.com </a>
+          </div>
+          <div class="box-calling">
+            <div class="adventures-calling">
+              <span>Get in touch </span>
+              <h3>Adventures Calling You Guys!</h3>
+            </div>
+            <div class="our-offices">
+              
+              <div class="layout-offices-earth">
+                <div class="earth">
+                  <i class="fa-solid fa-earth-americas"></i></div>
+                <div class="text-info-our"><span>Our Offices </span>
+                  <h4>Nepal,USA,india </h4>
+                  
+                  <div class="icon-rw">
+                    <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="services-adventures-country-talk">
+            <div class="flex-layout-try-talk">
+              <div class="box-ser-ad-try">
+                <div class="layout-ser-ad-try">
+                  <div class="services-items">
+                    <h4>Services </h4>
+                    <ul class="parent-ser-ad-try">
+                      <li class="item-ser-ad-try"><a href="">Budget Tours</a></li>
+                      <li class="item-ser-ad-try"><a href="">Expert Insight</a></li>
+                      <li class="item-ser-ad-try"><a href="">Independent</a></li>
+                      <li class="item-ser-ad-try"><a href="">Luxury Tours</a></li>
+                      <li class="item-ser-ad-try"><a href="">Safety Tips</a></li>
+                      <li class="item-ser-ad-try"><a href="">Tips n Tricks</a></li>
+                    </ul>
+                  </div>
+                  <div class="adventures-items">
+                    <h4>Adventures</h4>
+                    <ul class="parent-ser-ad-try">
+                      <li class="item-ser-ad-try"><a href="">Beach Activity</a></li>
+                      <li class="item-ser-ad-try"><a href="">Bungee Jump</a></li>
+                      <li class="item-ser-ad-try"><a href="">City Tour</a></li>
+                      <li class="item-ser-ad-try"><a href="">Hiking Trips</a></li>
+                      <li class="item-ser-ad-try"><a href="">Jungle Safari</a></li>
+                      <li class="item-ser-ad-try"><a href="">Night City Walk</a></li>
+                    </ul>
+                  </div>
+                  <div class="Country-items">
+                    <h4>Adventures</h4>
+                    <ul class="parent-ser-ad-try">
+                      <li class="item-ser-ad-try"><a href="">USA</a></li>
+                      <li class="item-ser-ad-try"><a href="">Australia</a></li>
+                      <li class="item-ser-ad-try"><a href="">South Africa</a></li>
+                      <li class="item-ser-ad-try"><a href="">West indies</a></li>
+                      <li class="item-ser-ad-try"><a href="">New Zealand</a></li>
+                      <li class="item-ser-ad-try"><a href="">Srilanka</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="box-let-talk">
+                <div class="inline-box-right">
+                  <h4>Get In Touch </h4>
+                  <span>Let's Talk <i class="fa-solid fa-arrow-right"></i></span>
+                  <div class="box-form">
+                    <form action="" method="get"> 
+                      <div class="inp-btn"><a href="#"> <i class="fa-regular fa-envelope"></i></a>
+                        <input type="email" name="email" placeholder="Enter your email" required="required"/>
+                        <button type="submit">Scend Now!</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="policy-link">
+              <span class="pri-poli">Privacy policy </span>
+              <ul class="linke-fb-ins">
+                <li><a href="#">Linkedin</a></li><span class="line-diagonal">/</span>
+                <li><a href="#">Facebook</a></li><span class="line-diagonal">/</span>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="emprise"><span>2018-2024 © Emprise</span></div>
+        </section>
+      </footer>
+    </div>
+    <!--/=======================Icon ======================================================-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--/=======================javascript ====================================-->
+    <script src="../scripts/mainTravel.js"> </script>
+    <!--/======================= slick slider========================================-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../scripts/slick-slider/slide.js"></script>
+  </body>
+</html>

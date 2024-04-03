@@ -1,0 +1,43 @@
+
+@use "./base";
+@use "./components/button";
+// @use "./vendors/grid";
+///Layout
+@use "./layout/header";
+@use "./layout/home";
+@use "./layout/booking";
+@use "./layout/destination";
+@use "./layout/services";
+@use "./layout/gallery";
+// @use "./layout/seller";
+@use "./layout/guides";
+@use "./layout/tour_world";
+@use "./layout/adventures";
+@use "./layout/question";
+@use "./layout/footer";
+
+//===conponents
+@use "./components/input_search";
+
+//===reponsive
+@use "./vendors/grid";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@600&family=Noto+Sans+KR&family=Poppins:wght@100;300;400;500;600&family=Raleway:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Dancing+Script:wght@400;600&family=Great+Vibes&family=Karla:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;300;400;500;600&family=Noto+Sans+KR&family=Poppins:wght@100;200;300;400;500;600&family=Raleway:wght@500&family=Satisfy&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

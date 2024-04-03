@@ -1,0 +1,51 @@
+@use "../helpers" as bookHelp;
+@use "../vendors/reponsive" as reponBook;
+
+section.book-form {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: -8rem;
+	position: relative;
+	z-index: 10;
+	background-color:bookHelp.$primary-color-black-f2;
+	border-radius: 1rem;
+	box-shadow: 0 0.5rem 1rem bookHelp.$primary-color-black-rgba-03;
+	padding: 3rem 2rem ;
+	form {
+		display: flex;
+		align-items: flex-end;
+		gap:1.54rem;
+		flex-wrap: wrap;
+		.inputBox {
+			flex: 1 1 25rem;
+
+			span {
+				font-size: 1.5rem;
+				color: bookHelp.$white;
+			}
+
+			input {
+				width: 100%;
+				padding: 1.2rem 1.4rem;
+				border-radius: 5rem;
+				border:  bookHelp.$border;
+				font-size: 1.6rem;
+				color: bookHelp.$light-color;
+				text-transform: none;
+				background: none;
+				margin-top: 1rem;
+				&::placeholder {
+					color:bookHelp.$blue;
+				}
+				&[type=date] {
+					color:bookHelp.$blue;
+					color-scheme: dark !important;
+				}
+			}
+		}
+
+		.btn {
+			flex: 1 1 15rem;
+		}
+	}
+}

@@ -1,0 +1,187 @@
+@use "../helpers" as service_help;
+@use "../vendors/reponsive" as reponService;
+
+section.services {
+	background-image: url("/app/img/service-map.png");
+	background-position: center 70px;
+	background-repeat: no-repeat;
+	background-size: cover ;
+	background-clip: padding-box;
+	$mt: 150px;
+	margin-top: -1 * $mt;
+	padding-top: calc(9rem + $mt);
+	padding-bottom: 250px;
+	background-color: hsl(90, 14%, 97%);
+	div.heading {
+		text-align: left;
+		margin-bottom: 3.7rem;
+	}
+
+	h2 {
+		color:service_help.$primary-color-green;
+		font-size: 3.5rem;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+	
+	span {
+		font-size:1.75rem ;
+		color:service_help.$text-color-gray;
+		margin-top: 2rem;
+		line-height: 1.4;
+	}
+	
+	.box-container {
+		div.flex-slick {
+			// overflow: hidden;
+			div.slick-list {
+				margin: 0 -10px;
+			}
+			button.pull-customArrows {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 4.2rem;
+				height: 4.2rem;
+				position: absolute;
+				z-index: 1;
+				color:service_help.$white;
+				font-size: 23px;
+				top:-85px;
+				border-radius: 50%;
+				cursor: pointer;
+				background: transparent;
+				transition: all 0.2s linear;
+				box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+				top:105px;
+				@include reponService.repon-sive(md) {
+					top:-85px;
+				}
+				&.pull-left {
+					@include reponService.repon-sive(md) {
+						background-color: transparent;
+						right:60px;
+						left: initial;
+						color:currentColor;
+						&.pull-left:hover {
+							background-color:service_help.$primary-color-green;
+							color:service_help.$white;
+						}
+					}
+					left: -17px;
+					background-color:service_help.$white ;
+					color:service_help.$primary-color-green;
+					border:1.7px solid service_help.$primary-color-green;
+					&:hover {
+						color:service_help.$white;
+						border:1.7px solid service_help.$primary-color-green;
+						background-color:service_help.$primary-color-green;
+
+					}
+				}
+
+				&.pull-right {
+					@include reponService.repon-sive(md) {
+						right:0;
+						color:service_help.$white;
+						background-color:service_help.$primary-color-green ;
+						&.pull-right:hover {
+							background-color: service_help.$white;
+							color:service_help.$primary-color-green;
+						}
+					}
+					right: -17px;
+					background-color: service_help.$white;
+					color:service_help.$primary-color-green;
+					border:1.7px solid service_help.$primary-color-green;
+					&:hover {
+						background-color:service_help.$primary-color-green ;
+						color:service_help.$white;
+					}
+				}
+			}
+		}
+		div.box-items-tour {
+			padding:0 10px;
+			transform: perspective(600px) rotateY(13deg);
+			transform-origin: left center;
+			transition: all 0.3s linear;
+			&:hover {
+				transform: initial;
+				transform-origin: center;
+			}
+		}
+		.box {
+			background-color:service_help.$primary-color-black-16;
+			border-radius: 1rem;
+			padding: 3rem;
+			text-align: right;
+			border: 0.2rem solid service_help.$black;
+
+			&:hover h3 a {
+				color:service_help.$blue;
+				letter-spacing: 0.2rem;
+			}
+
+			> span {
+				color:service_help.$primary-color-yellow;
+				padding: 5px 15px;
+				font-size: 15px;
+				border-radius: 30px;
+				font-weight: 500;
+				background-color:service_help.$primary-color-pink-de;
+				cursor: pointer;
+				box-shadow: 0 3px 3px service_help.$black;
+			}
+
+			&:hover {
+				border: service_help.$border;
+			}
+
+			div.link-category {
+				margin-top: 50px;
+				text-align: left;
+				& * {
+					transition: all 0.3s linear;
+				}
+				h3 > a {
+					font-size: 2.3rem;
+					color:service_help.$white;
+					display: block;
+					width: max-content;
+					text-align: left;
+					margin-top: 20px;
+					font-weight: 700;
+					text-shadow: -4px 3px 1px service_help.$primary-shadow;
+					&:hover {
+						color:service_help.$blue;
+						letter-spacing: 0.2rem;
+					}
+				}
+				a{
+					display:inline-block ;
+					> img {
+						width: 57px;
+						object-fit: cover;
+						position: relative;
+						animation: effect-on-top 1.3s linear infinite alternate;
+						@keyframes effect-on-top {
+							0% {
+								transform: translateY(-5px);
+							}
+							100% {
+								transform: translateY(6px);
+							}
+						}
+					}
+				} 
+				span {
+					text-align: left;
+					display: block;
+					font-size: 17px;
+					color:service_help.$primary-color-gray-9e;
+				}
+			}
+		}
+	}
+}

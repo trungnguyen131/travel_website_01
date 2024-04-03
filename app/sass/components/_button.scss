@@ -1,0 +1,19 @@
+@use "../helpers" as styleBtn;
+
+.btn {
+	display: inline-block;
+	padding: 1rem 3rem;
+	font-size: 1.7rem;
+	color: styleBtn.$blue;
+	$border: 0.2rem solid styleBtn.$blue;
+	border: styleBtn.$border;
+	cursor: pointer;
+	background: none;
+	border-radius: 5rem;
+	margin-left: auto;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		background: styleBtn.$blue ;
+		color: styleBtn.$black;
+	}
+}

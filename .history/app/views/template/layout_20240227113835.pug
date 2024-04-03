@@ -1,0 +1,31 @@
+block mixin 
+	include ../components/mixin
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Document
+		link(rel="stylesheet", href="../sass/public/css/travelStyle.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css")
+		link(rel="stylesheet", href="../../slick-carousel/slick/slick.css")
+		link(rel="stylesheet", href="/app/aos/dist/aos.css")
+		
+	body 
+
+		div(id="myApp")
+			block header 
+				include ../components/header
+			
+			block container
+				include ../components/container
+			
+			block footer
+				include ../components/footer
+		
+		block script 
+			include ../components/script 

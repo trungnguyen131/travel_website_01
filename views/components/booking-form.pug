@@ -1,0 +1,12 @@
+
+section(class= `${btn.replace(`${btn}`,"book-form")}`, 
+			id=`${btn.replace(`${btn}`,"book-form")}`)
+	form(action="")
+		+form_items("Where to?", "text", "place name")
+		+form_items("When?", "date")
+		+form_items("how many?", "number", "number of travelers")
+		input(
+			type="submit",
+			value="book now",
+			class= "btn"
+		)

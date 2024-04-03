@@ -1,0 +1,9 @@
+
+$screen-xl: "max-width: 1199px";
+@mixin repon-sive($break-poi) {
+    @if ($break-poi == "lg") {
+        @media screen and ($screen-xl) {
+            @content;
+        }
+    }
+}

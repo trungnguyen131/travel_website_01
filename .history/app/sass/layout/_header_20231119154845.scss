@@ -1,0 +1,303 @@
+@use "../helpers" as funHeader;
+@use "../vendors/reponsive" as reponHeader;
+
+header.header {
+	position: fixed;
+	left:0;
+	right:0;
+	top:0;
+	z-index: 10000;
+	background-color:rgb(11 27 28 / 99%);
+	height:100px;
+	width: 100%;
+	transition: all 0.25s linear;
+
+	div.container {
+		--grid-gutter-x: 40px;
+		--grid-gutter-y: 40px;
+		height: 100%;
+		div.row {
+			height: 100%;
+			margin-top: 0;
+			align-items: center;
+			margin: 0 0;
+			> * {
+				margin-top: 0;
+				flex: auto;
+				transition: all 0.5s;
+				padding: 0 0;
+			}
+	
+			> *:last-child {
+				display: flex;
+				align-items: center;
+			}
+			div.col:has(div.overlay-box) {
+				@include reponHeader.repon-sive(xl-min) {
+					position: relative;
+				}
+				position: absolute;
+				div.overlay-box {
+					flex-basis: 0;
+					position: fixed;
+					margin-top: 0;
+					&.active-overlay {
+						top:0;
+						bottom:0;
+						left: 0;
+						right:0;
+						width: 100%;
+						height: 100vh;
+						z-index: 99999;
+						background-color: rgba($color:funHeader.$black, $alpha: 0.3);
+					}
+					@include reponHeader.repon-sive(xl-min) {
+						margin-top: 5px;
+						flex-basis: 66%;
+						text-align: center;
+						position: initial;
+						margin-top: initial;
+					}
+		
+					.navbar {
+						margin-top: 0;
+						position: fixed;
+						left: 0; right: 0;
+						top:0;
+						min-height: 100vh;
+						max-width: 330px;
+						background-color:funHeader.$primary-color-black-12;
+						opacity: 0;
+						visibility: hidden;
+						transform: translateX(-330px);
+						text-align: left;
+						transition: all 0.5s ease-in-out;
+						@include reponHeader.repon-sive(xl-min) {
+							all:unset;
+						}
+				
+						&.active {
+							z-index: 99999;
+							transform: translateX(0);
+							opacity: 1;
+							visibility: visible;
+							@include reponHeader.repon-sive(xl-min) {
+								all:unset;
+							}
+						}
+		
+						div.box-bor-bot {
+							@include reponHeader.repon-sive(sm) {
+								display: none;
+							}
+							display: block;
+							margin: 30px 0px 0 40px;
+							padding-bottom:10px ;
+							border-bottom: 1px solid funHeader.$blue;
+						}
+		
+						div.box-nav {
+							@include reponHeader.repon-sive(sm) {
+								margin-top: 80px;
+							}
+							@include reponHeader.repon-sive(xl-min) {
+								margin-top: 0;
+							}
+							margin-top: 40px;
+							& a {
+								font-size: 1.7rem;
+								color:funHeader.$white;
+								font-size: 1.7rem;
+								display: block;
+								margin: 33px 60px;
+								@include reponHeader.repon-sive(xl-min) {
+									display: inline-block;
+									margin: 0 1.2rem;    
+									
+								}
+									i.icons-screen {
+										display: inline-block;
+										@include reponHeader.repon-sive(xl-min) {
+											display: none;
+										}
+									}
+								&.active-link {
+									color:funHeader.$blue;
+									position: relative;
+									padding-bottom: 5px;
+									&::before {
+										content: " ";
+										position: absolute;
+										width: 30%;
+										height:1.5px;
+										background-color: funHeader.$blue;
+										bottom:0;
+										left: 0;
+									}
+								}
+								&:hover {
+									color:funHeader.$blue;
+								}
+							}
+							span.line-item {
+								height: 0.7px;
+								width: calc(100% - 40px);
+								display: block;
+								background-color:funHeader.$blue;
+								margin-left: auto;
+								@include reponHeader.repon-sive(xl-min) {
+									height: 13px;
+									width: 1.5px;
+									background-color:funHeader.$white;
+									display: inline-block;
+									margin-left: initial;
+								}
+							}
+						}
+		
+						span.search-shopping {
+							display: inline-block;
+							a {
+								font-size: 1.9rem;
+								margin-left: 16px;
+								color:funHeader.$blue;
+								&:hover {
+									color:funHeader.$white;
+								}
+							}
+						}
+					}
+				}
+			}
+			div.col:has(a.logo) {
+				.logo {
+					font-size:3.3rem ;
+					color:funHeader.$white;
+					font-weight: bolder;
+					display: flex;
+					align-items: center;
+					font-family: "Dancing Script", cursive;
+					span {
+						margin-top: 8px;
+						display: inline-block;
+					}
+				}
+			}
+			div.col:has(a.logo.main-logo) {
+				display: none;
+				color:rgb(8, 26, 27);
+				@include reponHeader.repon-sive(sm) {
+					display: inline-block;
+					color:initial;
+				}
+			}
+			div.col:has(#menu-btn) {
+				display: flex;
+				align-items: center;
+				z-index: 10000;
+				flex-basis: 20%;
+				@include reponHeader.repon-sive(xl-min) {
+					all:unset;
+					display: none;
+				}
+				#menu-btn {
+					font-size: 2.5rem;
+					color:funHeader.$white;
+					cursor: pointer;
+					position: relative;
+				}
+		
+				span.search-shopping {
+			
+					i {
+						font-size: 1.9rem;
+						margin-left: 16px;
+						color:funHeader.$blue;
+						&:hover {
+							color:funHeader.$white;
+						}
+					}
+				}
+			}
+			div.col:has(.parent-box-ip) {
+				div.parent-box-ip {
+					@include reponHeader.repon-sive(xl-min) {
+						all:unset;
+						background-color: #0f1d1d;
+						width: 200px;
+						margin-left: auto;
+						border-radius: 4px;
+						border: 0.1rem solid funHeader.$blue;
+					}
+					top:100%;
+					position: absolute;
+					left: 0;
+					opacity: 0;
+					transform: translateX(-100%);
+					visibility: hidden;
+					&.show-search {
+						animation:effect-search-box forwards 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+					}
+					
+					@keyframes effect-search-box {
+						0% {
+							left: 0;
+							opacity: 0;
+							transform: translateX(-100%);
+							visibility: hidden;
+						}
+						100% {
+							opacity: 1;
+							left: 60px;
+							visibility: visible;
+							transform: translateX(0);
+						}
+					}
+		
+					background-color: #0f1d1d;
+					width: 250px;
+					margin-left: auto;
+					border-radius: 4px;
+					border: 0.1rem solid funHeader.$blue;
+					form {
+						display: flex;
+						width: 100%;
+						align-items: center;
+						div.search-box-inp {
+							flex-grow: 1;
+							padding-left: 13px;
+							input {
+								width: 100%;
+								font-size: 15px;
+								color: #fff;
+								&::placeholder {
+									color:#d9d9d9;
+								}
+
+								&
+							}
+						}
+						button {
+							padding: 17px;
+							@include reponHeader.repon-sive(xl-min) {
+								padding: 13px;
+							}
+							i {
+								color:funHeader.$blue;
+							}
+						}
+					}
+				}
+		
+				a.btn {
+					padding: 1.3rem 3rem;
+					border: 0.1rem solid funHeader.$blue;
+					margin-left: auto;
+					@include reponHeader.repon-sive(xl-min) {
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+}

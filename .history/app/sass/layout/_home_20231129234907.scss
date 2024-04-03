@@ -1,0 +1,116 @@
+@use "../helpers" as funHelp;
+@use "../vendors/reponsive" as reponHelp;
+
+section.home{
+
+	margin: 0 auto 0;
+	width: 100%;
+	$height: 870px;
+	min-height: $height;
+	padding-bottom: 5rem;
+	position: relative;
+	@include funHelp.cssFlex(center);
+	// padding-left: 0;
+	// padding-right: 0;
+	&::before {
+		content: " ";
+		position: absolute;
+		top:0;
+		left: 0;
+		bottom:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		background-color: rgba($color:funHelp.$primary-color-black-05, $alpha: 0.1);
+	}
+	video {
+		position: absolute;
+		top:0;
+		left: 0;
+		object-fit: cover;
+		width: 100%;
+		height:$height;
+		object-position: left;
+		@include reponHelp.repon-sive(xl-min) {
+			object-position: center;
+		}
+	}
+	.content {
+		text-align: left;
+		position: relative;
+		z-index: 9;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		justify-content: flex-start;
+		@include reponHelp.repon-sive(xl-min) {
+			align-items: center;
+		}
+		div.info-title-tour {
+			width: 100%;
+			span {
+				font-weight: bolder;
+				color:transparent;
+				-webkit-text-stroke: 0.1rem funHelp.$white;
+				font-size: 8rem;
+				display: block;
+				transition: 0.3s;
+				text-shadow: -3px 3px 2px  funHelp.$primary-color-black-rgba-793 ;
+				&:hover {
+					text-shadow: 3px 3px 2px  funHelp.$primary-color-black-rgba-793 ;
+					margin-left: 6px;
+				}
+			}
+		
+			h3 {
+				font-size: 8rem;
+				color:transparent;
+				-webkit-text-stroke: 0.09rem funHelp.$white;
+				font-weight: 700;
+				transition: 0.3s;
+				text-shadow: -3px 3px 2px funHelp.$primary-color-black-rgba-793 ;
+				&:hover {
+					text-shadow: 3px 3px 2px funHelp.$primary-color-black-rgba-793 ;
+				}
+			}
+			
+			p {
+				max-width:90rem ;
+				margin: 1rem 0;
+				font-size: 1.9rem;
+				color: funHelp.$white;
+				line-height: 2;
+				transition: 0.2s;
+				background-color:rgb(11 27 28 / 93%);
+				padding: 20px;
+				border-radius: 20px;
+			}
+		}
+
+		div.contact-us-box {
+			@include reponHelp.repon-sive(xl-min) {
+				display: block;
+			}
+			display: none;
+			background-color: rgba(11, 27, 28, 0.93);
+			padding: 2.5rem 1.8rem;
+			border-radius: 3rem;
+			margin-left: auto;
+			nav.contact-link {
+				display: flex;
+				flex-direction: column;
+				a > i {
+					text-align: center;
+					font-size: 2.2rem;
+					display: block;
+					margin: 10px 0;
+					color: funHelp.$white;
+					&:hover {
+						color:funHelp.$primary-color-blue-ea;
+					}
+				}
+			}
+		}
+	}
+}

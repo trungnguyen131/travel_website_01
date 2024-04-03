@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:scss": "sass sass/travelStyle.scss sass/public/css/travelStyle.css --watch",
+    "build:tag": "pug -w ./views/pug -o ./html -P"
+  },
+  "author": "",
+  "license": "ISC",
+  
+  "devDependencies": {
+    "aos": "^3.0.0-beta.6",
+    "sass": "^1.69.5",
+    "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

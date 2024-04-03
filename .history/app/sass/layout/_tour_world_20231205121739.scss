@@ -1,0 +1,50 @@
+@use "../helpers" as helTw;
+
+section.container-tour-world {
+    margin-top: 50px;
+    background-image: url();
+    div#box-tour-world {
+        transform-origin: left center;
+        min-height: 370px;
+        padding:30px;
+        margin: 0 auto;
+        text-align: center;
+        @include helTw.cssFlex(center);
+        border-radius: 30px;
+        background-image:linear-gradient(to right, helTw.$primary-color-green, helTw.$primary-color-green-2c) ;
+        &:hover {
+            box-shadow: 0 0 3px helTw.$black ;
+        }
+        div.content-tour-world {
+            margin-top: 30px;
+            strong, div {
+                color:helTw.$white;
+                font-size: 4.3rem;
+            }
+            div {
+                font-size: 3.3rem;
+                margin: 2rem 0;
+            }
+    
+            span {
+                font-size: 2rem;
+                font-weight: 400;
+                display: block;
+                margin-top: 40px;
+                color:helTw.$primary-color-ccc;
+            }
+    
+            a.btn {
+                margin-top: 40px;
+                padding: 1.3rem 3rem;
+                &:hover > * {
+                    color:helTw.$black;
+                }
+                span {
+                    margin: 0;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

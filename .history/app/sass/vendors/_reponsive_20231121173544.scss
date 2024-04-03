@@ -1,0 +1,35 @@
+
+$screen-xxl: "min-width: 1399.8px";   /// 1400px
+$screen-xl-min: "min-width: 1199.8px"; /// 1200px
+$screen-lg: "min-width: 991.8px"; /// 992px
+$screen-md: "min-width: 767.8px";    /// 768px
+$screen-sm: "min-width: 575.8px";    /// 576px
+@mixin repon-sive($break-poi) {
+    @if ($break-poi == "xxl") {
+        @media screen and ($screen-xxl) {
+            @content;
+        }
+    }
+
+    @if ($break-poi == "xl-min") {
+        @media screen and ($screen-xl-min) {
+            @content;
+        }
+    }
+
+    @if ($break-poi == "lg") {
+        @media screen and ($screen-lg) {
+            @content;
+        }
+    }
+    @if ($break-poi == "md") {
+        @media screen and ($screen-md) {
+            @content;
+        }
+    }
+    @if ($break-poi == "sm") {
+        @media screen and ($screen-sm) {
+            @content;
+        }
+    }
+}

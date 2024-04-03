@@ -1,0 +1,290 @@
+mixin form_items( $text_span,$nameType, $textplace)
+		div(class= "inputBox")|
+				|
+				span #{$text_span}
+				if $nameType == "text"
+						input(
+								type= $nameType,
+								placeholder= `${$textplace}`
+								value=""
+						)
+				else if $nameType == "date"
+						input(
+								type= $nameType,
+								value=""
+						)
+				else if $nameType == "number"
+						input(
+								type= $nameType,
+								placeholder= `${$textplace}`
+								value=""
+						)
+//-////////////////////////////////////////////
+mixin linkVideo($link)
+		span(class= "controls-btn", data-src= `${$link}`)
+//-//////////////////////////////////////////////
+mixin box_item($span_text, $h3_text, $a_text)
+		- var styleBtn = "#book-gorm"
+		div(class= "content")|
+				|
+				span= `${$span_text}`
+				h3= `${$h3_text}`
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exercitationem assumenda odio iusto, quo veniam qui inventore! Eligendi illo 
+				|
+				|
+				a(href= "#", class= "btn") #{styleBtn.replace(`${styleBtn}`,`${$a_text}`)}
+//-////////////////////////////////////////////
+mixin box_item_video($span_text, $h3_text, $a_text)
+		- var styleBtn = "#book-gorm"
+		video(src="../video/video-tour-2.mp4" type="video/mp4" autoplay loop muted) 
+		div(class= "content")
+				div(class="info-title-tour")|
+						|
+						span= `${$span_text}`
+						h3= `${$h3_text}`
+						|
+						p() Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni exercitationem assumenda odio iusto, quo veniam qui inventore! Eligendi illo 
+						|
+						|
+						a(href= "#", class= "btn") #{styleBtn.replace(`${styleBtn}`,`${$a_text}`)}
+				div(class="contact-us-box")
+						nav(class="contact-link")
+								-
+										const $link_contact_us = [
+												'fa fa-facebook-f', 
+												'fa fa-twitter',
+												'fa fa-instagram'
+										]
+								-for(let $run = 0; $run < $link_contact_us.length; $run++)
+										|
+										|
+										a(href="#")
+												i(class=`${$link_contact_us[$run]}`)
+//-///////////////////////////////////////////
+mixin content_boxItem($link_images)
+		div(class="box-items-tour")
+				div(class= "box")
+						div(class= "image")|
+								|
+								- const imgLink = "../img"
+								img(src=`${imgLink}/${$link_images}.jpg`, alt="")
+						div(class= "content")
+								div(class="name-heart")
+										div(class="mountain-hiking")
+												h3 Mountain Jungfrau
+												|
+												|
+												span Hiking Tour | Stoke on trent
+										|
+										|
+										a(href="#") #[i(class="fa-regular fa-heart")]
+								div(class="mountain-moneys-form")
+										div(class="price")
+												|
+												|
+												span from 
+												strong $890.00
+												p *Price varies 
+										div(class="star-number")|
+												|
+												img(src="../img/stars.png")|
+												|
+												b 4.8(107)
+								div(class="box-watch")
+										div(class="days-watch")
+												i(class="fa-regular fa-clock")
+												span 7 Days
+										div(class="free-news")
+												div(class="free")
+														i(class="fa-solid fa-check")
+														span Free Cancellation
+												div(class="new")
+														i(class="fa-solid fa-check")
+														span(class="hide") New on Entrada
+//-////////////////////////////////////////////////////////
+mixin title($firstText,$spanText, $h1Text)
+		h2 #{$firstText} #{$spanText}
+		|
+		|
+		span= `${$h1Text}`
+//-//////////////////////////////////////////
+mixin services_box()
+		- 
+				const $link_category = [
+						"24-hours-support",
+						"vending-machine",
+						"sunbed",
+						"jungle",
+						"city",
+						"bungee",
+						"backpack".
+						"adventurer"
+				]
+		- for(let $run = 0; $run < $link_category.length; $run++)
+				div(class="box-items-tour")
+						div(class="box")|
+								|
+								span(class="moneys-category")
+								div(class="link-category")|
+										|
+										a(href="#") 
+												img(src=`../img/${$link_category[$run]}.png`)
+										h3(class="title-category") #[a(href="#") ]
+										|
+										|
+										span 378 activities
+//-////////////////////////////////
+mixin gallery_tour()
+		div(class="gallery_grid")
+				- const $moneys_gallery = ["4.8$","4.7$","5.5$","6.3$","5.9$","4.9$"]
+				- const $img = ["destination-1","destination-2","destination-3", "destination-4","destination-5","destination-6"]
+				- 
+						const $title_gallaery = [
+								"Japan",
+								"Greece",
+								"London",
+								"Old Rain",
+								"Paris",
+								" Amsterdam"
+						]
+				- for(let $run = 0; $run < $img.length; $run++)
+						article(class="grid-items-gallery")
+								div(class="gallery-img-item")
+										img(src=`../img/${$img[$run]}.avif`)
+								|
+								div(class="box-info-gallery")|
+									a(href="#" class="link-info-gallery") 
+										|
+										span(class="moneys-category") #{$moneys_gallery[$run]}
+										|
+										|
+										div(class="box-link-gallery")|
+												|
+												button(class="link-testing") #[span(class="title_gallery") #{$title_gallaery[$run]}] 
+												div(class="waterfall") Waterfall
+//-/////////////////////////////////Seller-post
+mixin seller-post()
+		- 
+				const $image_seller = [
+						"river-1",
+						"gallery-img-9",
+						"london-1",
+						"boat",
+						"seller-imgae-1",
+						"natural",
+						"jp_ps"
+				]
+		- 
+				const $array_title_seller = [
+						"Mountain river tourism",
+						"Nature mountain forest",
+						"Big Ben clock tower"
+				]
+		- for(let $run = 0; $run < $image_seller.length; $run++)
+				div(class="post-item-seller")
+						figure(class="fig-image")
+								div(class="image-seller")
+										img(src=`../img/${$image_seller[$run]}.jpg` alt="")
+								div(class="seller-content")
+										span(class="moneys-seller") 30%
+										div(class="info-seller-explore")
+												div(class="time-moneys-seller")
+														time(class="times-seller") 10 Days | 09 Night 
+														div(class="link-moneys-seller") #[a(href="#") $895.50 ]
+												div(class="explore-seller-share")
+														button(class="icon-share") #[img(src="../img/share.png" alt="")]
+														div(class="btn-seller")
+																a(href="#") Explore 
+						figcaption(class="title-content-seller-text")
+								h3(class="heading-seller-title") #{$array_title_seller[$run]}
+								p Check out Daily and Promotion on Hotels, Easy and Fast Booking
+//-/////////////////////////////////
+mixin blogsBox($blogs_img)
+		div(class= "box")
+				div(class= "images") #[img(src= `../img/${$blogs_img}.jpg`, alt= "")]
+				div(class= "content")|
+						|
+						a(href= "#", class= "link") Life is a journey, not a destination
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestiae.
+						div(class= "icon")|
+								|
+								a(href="#") #[i(class= "fas fa-clock")] 21st may, 2021
+								|
+								|
+								a(href="#") #[i(class= "fas fa-user")] by admin
+//-//////////////////////////////////////
+mixin shareBox(...$listShare)
+		div(class= "share")|
+				|
+				each $listName in $listShare
+						a(href= "#", class= `fab fa-${$listName}`)|
+						|
+						|
+//-/////////////////////////////////////////
+mixin links_box()
+		div(class= "box")|
+				|
+				h3 quick links
+				|
+				|
+				- let objNameLink = {"#home":"home","#about":"about","#destination":"destination","#services":"services","#gallery":"gallery","#blogs":"blogs"}
+				each objValues, objKeys in objNameLink
+						a(href= `${objKeys}`, class= "links") #[i(class= "fas fa-arrow-right")] #{objValues}
+						|
+						|
+//-///////////////////////////////
+mixin guides_box()
+	-
+		const $guides_image = [
+			"image-guides-1",
+			"image-guides-2",
+			"image-guides-3",
+			"image-guides-4",
+		]
+
+	- for(let $run = 0; $run < $guides_image.length; $run++)
+		div(class="guides-item")
+			div(class="guides-item-layout")
+				div(class="image-item")|
+					|
+					a(href="#")|
+						|
+						if ($run == 0)
+							img(src=`../img/${$guides_image[$run]}.jpg`, alt="", style={'object-position':"center"})
+						else if ($run == 1)
+							img(src=`../img/${$guides_image[$run]}.jpg`, alt="", style={'object-position':"right"})
+						else if ($run == 2)
+							img(src=`../img/${$guides_image[$run]}.avif`, alt="", style={'object-position':"center"})
+						else 
+							img(src=`../img/${$guides_image[$run]}.jpg`, alt="")
+					div(class="number-guides-image")
+						b= `0${$run + 1}`
+				div(class="guides-info")
+					article(class="name-info-content")
+						div(class="info-content-heading") Adventure Guru 
+						h2(class="name-user") Martina #[br] James Junior 
+					article(class="about-guides")
+						div(class="about-content")
+							h2(class="about-item") About
+							|
+							|
+							span  Check out Daily and Promotion on Hotels, Easy and Fast Booking.
+						div(class="journey-content")
+							h2(class="journey-content") Journey
+							|
+							|
+							span  Check out Daily and Promotion on Hotels, Easy and Fast Booking. 
+					nav(class="link-info")
+						li() #[a(href="#") Facebook]
+						li() #[a(href="#") Instagram]
+						li() #[a(href="#") Twitter]
+//-//////////////////////////////////////
+mixin input_search() 
+	div(class="box-form")
+		form(action="", method="get") 
+			div(class="inp-btn")
+				a(href="#") 
+					i(class="fa-regular fa-envelope")
+				input(type="email" name="email" placeholder="Enter your email"  required)
+				button(type='submit') Scend Now!
+//-///////////////////////////////////

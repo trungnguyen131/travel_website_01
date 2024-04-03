@@ -1,0 +1,34 @@
+
+$screen-xl: "max-width: 1199.8px";
+$screen-xl-min: "min-width: 1199.8px"; /// 1200px
+$screen-xxl: "min-width: 1399.8px";   /// 1400px
+$screen-sm: "min-width: 575.8px";    /// 576px
+$screen-sm-min: "min-width: ";
+@mixin repon-sive($break-poi) {
+    @if ($break-poi == "xl") {
+        @media screen and ($screen-xl) {
+            @content;
+        }
+    }
+    @if ($break-poi == "xxl") {
+        @media screen and ($screen-xxl) {
+            @content;
+        }
+    }
+
+    @if ($break-poi == "xl-min") {
+        @media screen and ($screen-xl-min) {
+            @content;
+        }
+    }
+    @if ($break-poi == "sm") {
+        @media screen and ($screen-sm) {
+            @content;
+        }
+    }
+    @if ($break-poi == "sm-min") {
+        @media screen and ($screen-sm-min) {
+            @content;
+        }
+    }
+}

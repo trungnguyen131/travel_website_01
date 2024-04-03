@@ -1,0 +1,39 @@
+//================= Header ====================
+header(class= "header")
+	div(class="container")
+		div(class="row")
+			div(class="col")
+				div(id= "menu-btn", class="btn-bars") #[i(class= "fa-solid fa-bars-staggered")]
+				span(class="search-shopping")
+					a(href="#") #[i(class="fa-solid fa-magnifying-glass")]
+			div(class="col")
+				a(href="#", class="logo") 
+					img( style={width:'45px', margin:'7px'} src="../img/beach-tree.png", alt="")
+					span Travel
+			div(class="col")
+				div.overlay-box
+					nav(class= "navbar")
+						div(class="box-nav")
+							- const $link =["Home", "Destination", "Services", "Outstanding","Seller", "Guides"];
+							- 
+								const $icons = [
+									"fa-solid fa-gears",
+									"fa-solid fa-house",
+									"
+								]
+							- var number = 6;
+							- for(let $run = 0; $run < $link.length; $run++)
+								|
+								| 
+								if ($link[$run] == "Home")
+									a(href= `#${$link[$run]}` class="active-link") #[i(class="fa-solid fa-house")] #{$link[$run]} 
+								else 
+									a(href= `#${$link[$run]}`) #[i(class="fa-solid fa-location-dot")] #{$link[$run]} 
+							span(class="line-item")
+							a(href="#") #[i(class="fa-solid fa-cart-shopping")] 
+							a(href="#") #[i(class="fa-solid fa-chalkboard-user")]
+			div(class="col")
+				- var btn = "#book-gorm"
+				|
+				|
+				a(href= btn, class= "btn") #{btn.replace(`${btn}`,"Sign in")}

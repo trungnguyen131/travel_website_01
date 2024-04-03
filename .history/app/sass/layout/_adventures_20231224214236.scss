@@ -1,0 +1,83 @@
+@use "../helpers" as hepAdventures;
+
+section#box-adventures {
+    position: relative;
+    margin-top: 40px;
+    div.layout-grid-adventures {
+        display: grid;
+        grid-gap: 25px;
+        height: 380px;
+        grid-template-columns: 24% 22% 54%;
+        grid-template-rows:  repeat(2, 190px);
+        grid-template-areas: 
+            "img-1 img-2 info"
+            "img-1 img-3 info"
+        ;
+        article.grid-item {
+            height: 100%;
+            @for $run from 1 through 4 {
+                @if ($run == 4) {
+                    &:last-child {
+                        grid-area: info;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        div.post-info-adventures {
+                            a {
+                                color:mix;
+                                font-size: 1.7rem;
+                                font-weight: 500;
+                                &:hover {
+                                    color:hepAdventures.$primary-color-green-1f;
+                                }
+                            }
+
+                            h3 {
+                                max-width: 40rem;
+                                font-size: 3.8rem;
+                                margin: 10px 0;
+                                line-height: 1.3;
+                                font-weight: 500;
+                            }
+
+                            p {
+                                color:hepAdventures.$primary-color-gray;
+                                font-size: 1.75rem;
+                                font-weight: 400;
+                                max-width: 36rem;
+                                margin: 20px 0 4rem 0;
+                                line-height: 1.4;
+                            }
+
+                            span {
+                                font-size: 1.37rem;
+                                margin-top: 40px;
+                                display: inline-block;
+                                color:hepAdventures.$primary-color-gray;
+                            }
+                        }
+                    }
+                }  
+                @else if($run == 1 & $run == 2 & $run == 3) {
+                    &:nth-child(#{$run}) {
+                        $img-run: "img-" + "#{$run}";
+                        grid-area: #{$img-run} ;
+                    }
+                } 
+            }
+
+            div.post-img {
+                height: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                img {
+                    @include hepAdventures.customImage();
+                }
+                video {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

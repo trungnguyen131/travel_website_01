@@ -1,0 +1,15 @@
+
+$screen-md: "min-width: 992px";
+$screen-xl: "max-width: 1200px";
+@mixin repon-sive($break-poi) {
+    @if ($break-poi == "lg") {
+        @media screen and ($screen-lg) and ($screen-xl) {
+            @content;
+        }
+    }
+    // @if ($break-poi == "xl") {
+    //     @media screen and ($screen-xl) {
+    //         @content;
+    //     }
+    // }
+}
